@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        tools:context="com.example.android.politicalpreparedness.MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/ballot_logo" />
+
+        <Button
+            android:id="@+id/upcoming_elections_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/upcoming_elections"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/find_representatives_btn" />
+
+        <Button
+            android:id="@+id/find_representatives_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/find_my_representatives"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
